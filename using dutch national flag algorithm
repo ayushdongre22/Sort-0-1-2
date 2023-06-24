@@ -1,0 +1,17 @@
+#include <bits/stdc++.h> 
+void swap(int &a,int &b){
+   int z=a;
+   a=b;
+   b=z;
+}
+void sort012(int *arr, int n)
+{
+   //   Write your code here
+   int i=0,j=n-1,k=0;
+   while(k<=j){
+      if(arr[k]==0){swap(arr[k],arr[i]); i++; k++;}
+      else if(arr[k]==2){swap(arr[k],arr[j]); j--;}
+      else{k++;}
+   }
+   
+}
